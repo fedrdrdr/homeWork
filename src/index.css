@@ -6,8 +6,169 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+li {
+  list-style-type: none;
+}
+.header {
+  text-align: center;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  background-color: rgb(131, 129, 126); 
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+header h1 {
+  border: 4px solid rgb(60, 60, 55);
+  padding: 30px 90px;
+}
+nav ul {
+  margin-top: 3vh;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin:3px 12px;
+  padding:16px;
+
+}
+nav ul li:hover{
+  background-color: rgb(131, 129, 126);
+  border-radius: 30%;
+  font-weight: bolder;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.wrapper {
+  margin: 3vh 3vh 0 3vh;
+  padding: 4vh 3vh 0 3vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(197, 194, 189);
+}
+.wrapper div, .wrapper button {
+  margin:  6px;
+  font-size:large;
+}
+.wrapper input{
+  padding: 5px;
+  font-size:large;
+}
+
+.weatherFor5{
+  text-align: center;
+}
+.weatherList{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.weatherList li {
+  width: 20vh;
+  margin: 1vh;
+  padding: 1vh;
+  border: 2px solid rgb(197, 194, 189);
+}
+.main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+.main img{
+  border: rgb(197, 194, 189) 15px solid;
+  padding:5px;
+}
+
+.flex{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.flexP{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3vh 32vh 0 32vh;
+  padding: 4vh 3vh 0 3vh;
+}
+.todo{
+  display: flex;
+  font-size: 150%;
+}
+.todo-edit{
+  display: flex;
+  font-size: 150%;
+}
+.todo button{
+  margin-left:1vh;
+}
+.flex button{
+  margin:1vh;
+}
+.border{
+  border:1px solid rgb(131, 129, 126);
+}
+ .pok:hover{
+  outline:5px solid rgb(131, 129, 126);
+}
+.flexP li {
+  margin:5px;
+  padding: 5px;
+  text-align:center;
+}
+.flexP li p{
+  min-width: 15vh;
+  padding: 5px;
+}
+
+.indent {
+  padding:1vh 10vh;
+  margin:5px;
+}
+
+.listpoks{
+  display: flex;
+  flex-direction: row;
+}
+
+.foo {
+  transform: translate3d(20px, 20px, 0px);
+}
+.anPok{
+  position: relative;
+    top: 0px;
+    transition: transform .2s ;
+    animation: anPok-spin infinite 20s linear;
+}
+@keyframes anPok-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+form input {
+  padding:1vh;
+  font-size:150%;
+}
+ button {
+  padding:1vh;
+  font-size:150%;
 }
